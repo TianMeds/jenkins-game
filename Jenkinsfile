@@ -12,7 +12,7 @@ pipeline {
             steps {
                 echo "Building.."
                 sh '''
-                echo "doing build stuff.."
+                cd mygame
                 '''
             }
         }
@@ -20,7 +20,9 @@ pipeline {
             steps {
                 echo "Testing.."
                 sh '''
-                echo "doing test stuff..
+                cd mygame
+                python3 game.py
+                python3 game.py --name "Christian" --choice "Rock"
                 '''
             }
         }
