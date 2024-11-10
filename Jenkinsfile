@@ -13,6 +13,7 @@ pipeline {
                 echo "Building.."
                 sh '''
                 cd mygame
+                git pull origin master
                 '''
             }
         }
@@ -21,7 +22,7 @@ pipeline {
                 echo "Testing.."
                 sh '''
                 cd mygame
-                python3 game.py --name "Christian" --choice "Rock"
+                python3 game.py --choice "Rock"
                 '''
             }
         }
