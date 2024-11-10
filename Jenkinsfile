@@ -21,7 +21,6 @@ pipeline {
                 echo "Testing.."
                 sh '''
                 cd mygame
-                python3 game.py
                 python3 game.py --name "Christian" --choice "Rock"
                 '''
             }
