@@ -3,7 +3,7 @@ import argparse
 from string import capwords
 
 def play_game(player_choice):
-    print("Let's Play Rock Paper Scissors")
+    print("Let's Play Rock Papers Scissors")
     Choices = ["Rock", "Paper", "Scissors"]
 
     print("""Rules: 
